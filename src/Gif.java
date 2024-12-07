@@ -26,6 +26,7 @@ public class Gif {
         new Gif();
     }
     public Gif(){
+
        Window = new JFrame();
        Window.setSize(380,700);
        Window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,6 +36,10 @@ public class Gif {
        panel = new JPanel();
        panel.setBounds(0,0,380,690);
        panel.setBackground(Color.white);
+        panel.setPreferredSize(new Dimension(100, 100));
+        panel.setBackground(Color.RED);
+
+
        con.add(panel);
        image = new ImageIcon(".//src//hell93//96633009-d1818000-1318-11eb-9f1d-7f914f4ccb16.gif");
        button = new JButton(image);
@@ -49,6 +54,8 @@ public class Gif {
        pLabel = new JLabel();
        pLabel.setIcon(image);
        panel.add(pLabel);
+
+        Window.setLocationRelativeTo(null);
 
        Window.setVisible(true);
        file = ".//src//hell93//mixkit-winning-a-coin-video-game-2069.wav";
