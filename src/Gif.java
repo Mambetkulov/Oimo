@@ -56,7 +56,7 @@ public class Gif {
                 clip = AudioSystem.getClip();
                 clip.open(sound);
             } catch (Exception e) {
-                System.out.println("Something gone wrong");
+                System.out.println("Something gone wrongs");
             }
         }
         public void play(){
